@@ -1,13 +1,13 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/app';
 
 
-const getResource = async (url) => {
-    const resp = await fetch(url);
-    const body = await resp.json();
-    return body;
-};
 
-getResource('https://swapi.dev/api/people/1/')
-    .then((body) => {
-        console.log(body)
-    });
 
+
+
+
+
+ReactDOM.render(<App />,
+  document.getElementById('root'));
